@@ -26,35 +26,35 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(height: 200.0),
                    Image.asset("img/SuccessLogIn.png"),
                   SizedBox(height: 30.0),
-                  // Container(
-                  //   height: 50.0,
-                  //   width: 150.0,
-                  //   child: ElevatedButton(
-                  //     onPressed: () async{
-                  //
-                  //       SharedPreferences prefs = await SharedPreferences.getInstance();
-                  //       prefs.clear();
-                  //
-                  //
-                  //       Navigator.pop(context);
-                  //       Navigator.push(context,
-                  //           MaterialPageRoute(builder: (context) => LogIn())
-                  //       );
-                  //     },
-                  //     style: ButtonStyle(
-                  //       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  //         RoundedRectangleBorder(
-                  //           borderRadius: BorderRadius.circular(10.0),
-                  //         ),
-                  //       ),
-                  //       backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent),
-                  //     ),
-                  //     child: Text("Log Out",style: TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 20.0,
-                  //     ),),
-                  //   ),
-                  // ),
+                  Container(
+                    height: 50.0,
+                    width: 150.0,
+                    child: ElevatedButton(
+                      onPressed: () async{
+
+                        SharedPreferences prefs = await SharedPreferences.getInstance();
+                        prefs.clear();
+
+
+                        Navigator.pop(context);
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => LogIn())
+                        );
+                      },
+                      style: ButtonStyle(
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                        ),
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent),
+                      ),
+                      child: Text("Log Out",style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),),
+                    ),
+                  ),
                 ],
               ),
             ),
